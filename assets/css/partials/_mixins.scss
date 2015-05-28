@@ -1,0 +1,17 @@
+//Font Stacks
+@mixin title-font() {
+	font-family: 'Muli', sans-serif;
+	// font-family: 'Playfair Display', serif;
+}
+
+@mixin content-font() {
+	font-family: 'Muli', sans-serif;
+}
+
+
+//General Mixins
+@mixin border-box() {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

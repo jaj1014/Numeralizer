@@ -1,0 +1,44 @@
+body {
+	background-color: $background;
+	color: $text;
+	margin: 0;
+	padding: 0;
+
+}
+
+//Use if you want to change the default color highlight
+::selection {
+  background: $text-highlight;
+}
+::-moz-selection {
+  background: $text-highlight;
+}
+
+h1, h2 {
+	@include title-font;
+}
+
+h1 {
+	font-size: $extra-large;
+	margin: 0;
+}
+
+h2 {
+	font-size: $large;
+}
+
+p, a {
+	font-size: $medium;
+	line-height: 1.4em;
+	@include content-font;
+}
+
+a {
+	color: $link;
+	text-decoration: none;
+
+	&:hover {
+		color: $link-hover;
+	}
+}
+	

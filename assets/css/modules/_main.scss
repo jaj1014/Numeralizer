@@ -1,0 +1,75 @@
+.header {
+	margin-top: 50px;
+	text-align: center; 
+	width: 100%;
+
+	p {
+		margin-top: 0;
+	}
+
+}
+
+
+.app-wrap {
+	margin: 50px auto;
+	padding: 0 15px;
+	max-width: 750px;
+	@include border-box;
+
+	.generator {
+		height: 200px;
+		margin-bottom: 30px;
+		width: 100%;
+		@include border-box;
+
+		input {
+			background-color: $background;
+			border: 5px solid $text;
+			font-size: 9vmin;
+			height: 100%;
+			width: 100%;
+			text-align: center;
+			@include border-box;
+
+			&::-webkit-input-placeholder {
+				color: $placeholder-text;
+			}
+
+			&:-moz-placeholder {
+				color: $placeholder-text;
+			}
+
+			&::-moz-placeholder{
+				color: $placeholder-text;
+			}
+
+			&:-ms-input-placeholder{
+				color: $placeholder-text;
+			}
+
+			&:focus {
+				outline: none; 
+			}
+
+		}
+	}
+
+	.result {
+		background-color: $background;
+		border: 5px solid $text;
+		height: 200px;
+		position: relative;
+		width: 100%;
+		@include border-box;
+
+		#numeral {
+			font-size: 9vmin;
+			margin: 0; 
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
