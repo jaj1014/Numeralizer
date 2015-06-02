@@ -7,11 +7,16 @@ The object will be generic referenced based on the [i] so that it can reuse the 
 function numberToNumeral() {
 
 	var number = document.getElementById("number").value;
-
-
+  
+  if(number == "")
+	return document.getElementById("numeral").innerHTML = "Enter a Number";
+  
 	if(number > 3999 || isNaN(number))
 		return document.getElementById("numeral").innerHTML = "NA";
-
+		
+	if(number <= 0)	
+    return document.getElementById("numeral").innerHTML = "NA";
+    
 //Helper functions:
 //Converts number to array
 		function toArray(number) {
